@@ -1,0 +1,7 @@
+[submodule "DaFlightCommon"]
+    path = DaFlightCommon
+    url = https://github.com/killjoy1221/DaFlightCommon
+
+[submodule "DaFlightLiteloader"]
+    path = DaFlightLiteloader
+    url = https://github.com/killjoy1221/DaFlightLiteloader
