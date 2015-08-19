@@ -19,9 +19,9 @@ buildscript {
 apply plugin: 'net.minecrell.vanilla'
 
 archivesBaseName = "mod_DaFlight"
-version = "2.4.r6_mc1.8"
+version = "2.4.r7_mc1.8"
 ext {
-    revision = '44'
+    revision = '45'
     common = project ':DaFlightCommon'
     liteloader = project ':DaFlightLiteloader'
 }
@@ -31,6 +31,10 @@ minecraft {
     mappings = 'snapshot_20150817'
 }
 evaluationDependsOnChildren()
+subprojects {
+	targetCompatibility = 1.6
+	sourceCompatibility = 1.6
+}
 jar {
     extension 'litemod'
     from common.sourceSets.main.output
